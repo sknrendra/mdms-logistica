@@ -3,3 +3,4 @@ Global
 2. bottom cta
 3. Alamat dan info perusahaan
 4. foto banner
+5. header: loop.last don't work
