@@ -5,7 +5,7 @@
         <nav aria-label="breadcrumb animated slideInDown">
             <ol class="breadcrumb">
                 {% for item in header.breadcrumb %}
-                    {% if loop.last %}
+                    {% if forloop.last == true %}
                     <li class="breadcrumb-item text-white active" aria-current="page">{{item.name}}</li>
                     {% else %}
                     <li class="breadcrumb-item"><a class="text-white" href="{{item.url}}">{{item.name}}</a></li>
