@@ -1,6 +1,5 @@
 Global
-1. Finish 11ty refactoring
-2. Change font to Verdana, or maybe open sans
-3. bottom cta
-4. alamat dan info perusahaan
-5. foto banner
+1. Finish 11ty refactoring (about, services, cleanup of unused files)
+2. bottom cta
+3. Alamat dan info perusahaan
+4. foto banner
