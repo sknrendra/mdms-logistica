@@ -1,4 +1,5 @@
 {
     "layout": "layout.html",
-    "active": "service"
+    "active": "service",
+    "section": "Services"
 }
