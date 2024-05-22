@@ -4,3 +4,5 @@ Global
 3. Alamat dan info perusahaan
 4. foto banner
 5. header: loop.last don't work
+6. maps iframe
+7. copy contact section from mdms
