@@ -1,5 +1,5 @@
 Global
-1. Yang hover (read more) harus diklik dulu baru jalan
+1. tombol hoverable "read more" harus diklik dulu baru jalan, kl di mobile aneh
 2. tombol google play store aneh
-3. navbar blm difix
-4. tombol di homepage kegedean
+3. navbar blm difix, kl desktop boleh hoverable tp kalo mobile klik dulu
+4. tombol "explore more" di homepage kegedean
