@@ -1,8 +1,5 @@
 Global
-1. Finish 11ty refactoring (index)
-2. asset bundling
-
-Index
-0. cta button, include google play store & buat "read more" jd secondary
-1. features (incorporate both from individual or corporations)
-2. contact
+1. Yang hover (read more) harus diklik dulu baru jalan
+2. tombol google play store aneh
+3. navbar blm difix
+4. tombol di homepage kegedean
