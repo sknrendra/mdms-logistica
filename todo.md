@@ -3,6 +3,7 @@ Global
 2. tombol google play store aneh
 3. navbar blm difix, kl desktop boleh hoverable tp kalo mobile klik dulu
 4. tombol "explore more" di homepage kegedean
+5. ada gambar yang ilang di corporate rentals
 
 bayu
 
