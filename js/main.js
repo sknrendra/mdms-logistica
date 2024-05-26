@@ -50,6 +50,21 @@
             );
         } else {
             $dropdown.off("mouseenter mouseleave");
+            $dropdownToggle.on('click', function(event) {
+                
+                event.preventDefault()
+
+                let dropdown = $(this).parent()
+                let dropdownMenu = $(this).next()
+
+                if (dropdown.attr('class').includes('show')) {
+                    dropdown.removeClass(showClass)
+                    dropdownMenu.removeClass(showClass)
+                } else {
+                    dropdown.addClass(showClass)
+                    dropdownMenu.addClass(showClass)
+                }
+            })
         }
     });
     
