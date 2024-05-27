@@ -326,9 +326,6 @@
     padding: 0 10px;
 }
 
-.team-item div.btn-slide span a:hover i {
-    background: var(--secondary);
-}
 
 .service-item a.btn-slide span,
 .price-item a.btn-slide span,
@@ -336,6 +333,32 @@
     padding-left: 0;
     left: -100%;
     z-index: 1;
+}
+
+@media (max-width: 500px) {
+    .service-item a.btn-slide span,
+    .price-item a.btn-slide span,
+    .team-item div.btn-slide span {
+        left: 0;
+    }
+
+    .service-item a.btn-slide i,
+    .price-item a.btn-slide i,
+    .team-item div.btn-slide i {
+        border-radius: 0;
+    }
+}
+
+@media (min-width: 500px) {
+    .service-item a.btn-slide span,
+    .price-item a.btn-slide span,
+    .team-item div.btn-slide span {
+        left: -100%;
+    }
+}
+
+.team-item div.btn-slide span a:hover i {
+    background: var(--secondary);
 }
 
 .service-item:hover a.btn-slide i,
