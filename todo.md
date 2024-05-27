@@ -1,13 +1,8 @@
-Global
-1. tombol hoverable "read more" harus diklik dulu baru jalan, kl di mobile aneh
-2. tombol google play store aneh
-3. navbar blm difix, kl desktop boleh hoverable tp kalo mobile klik dulu
-4. tombol "explore more" di homepage kegedean
-5. ada gambar yang ilang di corporate rentals
+Important
+1. bullet point logo blm ubah (index, corporate, individual, car selection, car inspection, car delivery)
+2. maps perlu service account
 
-bayu
-
--- logistica ---
-4. gplay badge logonya kepotong
-5. bullet point logo blm ubah
-6. "Read more" gak konsisten, tbtb muncul tbtb ilangg
+Optional
+1. tombol "explore more" di homepage kegedean
+2. Perbaiki gambar yang double
+3. refactor components
