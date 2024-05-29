@@ -1,6 +1,11 @@
 Important
 1. bullet point logo blm ubah (index, corporate, individual, car selection, car inspection, car delivery)
-2. maps perlu service account
+
+prototyping i18n
+1. buat branch baru, terus test di situ
+2. Butuh redirect ke international site ketika pertama masuk. 
+- di index.html buat redirect, ini fungsinya sebagai backup. tapi di server hrs ada redirect sendiri
+- copas aja dan versi korea translate aja
 
 Optional
 1. tombol "explore more" di homepage kegedean
