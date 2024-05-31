@@ -1,5 +1,6 @@
 Important
 1. bullet point logo blm ubah (index, corporate, individual, car selection, car inspection, car delivery)
+2. navbar point to index causing a 404
 
 prototyping i18n
 1. buat branch baru, terus test di situ
