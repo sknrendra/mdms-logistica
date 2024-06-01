@@ -82,6 +82,10 @@ module.exports = function(eleventyConfig) {
           'cta subheading': {
             'en': 'Choose Mulia Jasa Indokor for a reliable and convenient car rental experience. Try our app in Google Play Store now.',
             'ko': '신뢰할 수 있고 편리한 차량 렌탈 경험을 위해 Mulia Jasa Indokor를 선택하세요. 지금 Google Play 스토어에서 우리 앱을 사용해 보세요.'
+          },
+          'address': {
+            'en': 'Address',
+            'ko': '주소'
           }
           
         },
