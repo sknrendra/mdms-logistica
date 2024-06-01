@@ -14,12 +14,15 @@
         2. translate both
         3. refactor to use i18n translation for the rest
     3. Refactor
-        1. build a markup to switch between languages
+        1. build a markup to switch between languages (done)
         2. probably use cookies to store language choice? wikipedia does not use that though 
+    4. On Halt
+        1. Footer Linking
+        2. refactor ko to kr
 
 ## Important
 1. bullet point logo blm ubah (index, corporate, individual, car selection, car inspection, car delivery)
-2. navbar point to index causing a 404
+2. test responsive navbar, terutama yang dropdown
 
 ## Optional
 1. tombol "explore more" di homepage kegedean
