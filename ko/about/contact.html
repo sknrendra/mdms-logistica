@@ -1,10 +1,14 @@
 ---
-header:
-    name: Contact Us
-    breadcrumb:
-        - {"name": "Home", "url": "/"}
-        - {"name": "About Us", "url": "/about"}
-        - {"name": "Contact Us", "url": "/about/contact"}
+eleventyComputed:
+    header:
+        name: "{{'about-us' | i18n}}"
+        breadcrumb:
+            -   name: "{{'home' | i18n}}"
+                url: "/"
+            -   name: "{{'about-us' | i18n}}"
+                url: "/about"
+            -   name: "{{'contact-us' | i18n}}"
+                url: "/about/contact"
 ---
 
 {% include "header.html" %}

@@ -1,10 +1,14 @@
 ---
-header:
-    name: Individual Rentals
-    breadcrumb:
-        - {"name": "Home", "url": "/"}
-        - {"name": "Service", "url": "/service"}
-        - {"name": "Individual Rental", "url": "/service/individual"}
+eleventyComputed:
+    header:
+        name: "{{'services' | i18n}}"
+        breadcrumb:
+            -   name: "{{'home' | i18n}}"
+                url: "/"
+            -   name: "{{'services' | i18n}}"
+                url: "/service"
+            -   name: "{{'individual-rental' | i18n}}"
+                url: "/service/individual/"
 ---
 
 {% include "header.html" %}

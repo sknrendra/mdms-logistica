@@ -1,10 +1,14 @@
 ---
-header:
-    name: Car Selection
-    breadcrumb:
-        - {"name": "Home", "url": "/"}
-        - {"name": "How It Works", "url": "/how-it-works"}
-        - {"name": "Car Selection", "url": "/how-it-works/car-selection"}
+eleventyComputed:
+    header:
+        name: "{{'car-selection' | i18n}}"
+        breadcrumb:
+            -   name: "{{'home' | i18n}}"
+                url: "/"
+            -   name: "{{'how-it-works' | i18n}}"
+                url: "/how-it-works"
+            -   name: "{{'car-selection' | i18n}}"
+                url: "/how-it-works/car-selection"
 ---
 
 {% include "header.html" %}

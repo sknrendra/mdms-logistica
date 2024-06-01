@@ -35,6 +35,18 @@ module.exports = function(eleventyConfig) {
             'en': 'How It Works',
             'ko': '이용 방법'
           },
+          'car-selection': {
+            'en': 'Car Selection',
+            'ko': '차량 선택'
+          },
+          'car-inspection': {
+            'en': 'Car Inspection',
+            'ko': '차량 점검'
+          },
+          'car-delivery': {
+            'en': 'Car Delivery',
+            'ko': '차량 인도'
+          },
           'services': {
             'en': 'Services',
             'ko': '서비스'

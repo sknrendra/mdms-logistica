@@ -1,10 +1,14 @@
 ---
-header:
-    name: Car Inspection
-    breadcrumb:
-        - {"name": "Home", "url": "/"}
-        - {"name": "How It Works", "url": "/how-it-works"}
-        - {"name": "Car Inspection", "url": "/how-it-works/car-inspection"}
+eleventyComputed:
+    header:
+        name: "{{'car-inspection' | i18n}}"
+        breadcrumb:
+            -   name: "{{'home' | i18n}}"
+                url: "/"
+            -   name: "{{'how-it-works' | i18n}}"
+                url: "/how-it-works"
+            -   name: "{{'car-inspection' | i18n}}"
+                url: "/how-it-works/car-inspection"
 ---
 
 {% include "header.html" %}

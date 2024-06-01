@@ -1,10 +1,14 @@
 ---
-header:
-    name: Company History
-    breadcrumb:
-        - {"name": "Home", "url": "/"}
-        - {"name": "About Us", "url": "/about"}
-        - {"name": "Company History", "url": "/about/history"}
+eleventyComputed:
+    header:
+        name: "{{'about-us' | i18n}}"
+        breadcrumb:
+            -   name: "{{'home' | i18n}}"
+                url: "/"
+            -   name: "{{'about-us' | i18n}}"
+                url: "/about"
+            -   name: "{{'corporate-history' | i18n}}"
+                url: "/about/history"
 ---
 
 {% include "header.html" %}

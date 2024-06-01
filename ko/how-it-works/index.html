@@ -1,9 +1,12 @@
 ---
-header:
-    name: How It Works
-    breadcrumb:
-        - {"name": "Home", "url": "/"}
-        - {"name": "How It Works", "url": "/how-it-works"}
+eleventyComputed:
+    header:
+        name: "{{'how-it-works' | i18n}}"
+        breadcrumb:
+            -   name: "{{'home' | i18n}}"
+                url: "/"
+            -   name: "{{'how-it-works' | i18n}}"
+                url: "/how-it-works"
 ---
 
 {% include "header.html" %}
