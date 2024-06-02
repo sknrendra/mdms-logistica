@@ -38,3 +38,12 @@
 4. saran: tulis macem macem mobil
 5. drive functionality
 6. subscription: 
+
+# Company Profile
+1. Client List (index)
+2. Car List & Request new car
+3. About Us, Company Profile, President & CEO: Hur Woo Seok
+5. Service Include
+    - perbaikan dan perawatan berkala per 10000km, penggantian ban dan accu
+    - perpanjangan STNK
+    - Asuransi all risk
