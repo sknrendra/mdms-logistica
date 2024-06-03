@@ -1,6 +1,31 @@
 ---
 layout: layout.html
 active: home
+clients:
+    - name: PT. IBK
+      logo: /assets/img/company-ibk.png
+    - name: PT. Hyundai AutoEver
+      logo: /assets/img/company-autoever.jpg
+    - name: PT. Glovis Indonesia Int
+      logo: /assets/img/company-glovis.jpg
+    - name: PT. Asiana Airlines
+      logo: /assets/img/company-asiana.png
+    - name: PT. Meritz Korindo
+      logo: /assets/img/company-meritz.png
+    - name: PT. Hanhwa Mining Indonesia
+      logo: /assets/img/company-hanhwa.png
+    - name: PT. Doosan Heavy Industries
+      logo: /assets/img/company-doosan.jpg
+    - name: PT. Krakatau Posco
+      logo: /assets/img/company-Krakatau-Posco.png
+    - name: PT. Hyundai Capital
+      logo: /assets/img/company-hyundai-capital.png
+    - name: PT. Hyundai Kefico
+      logo: /assets/img/company-kefico.png
+    - name: PT. CJ Logistics
+      logo: /assets/img/company-cj-logistic.png
+    - name: PT. HLI Green Power
+      logo: /assets/img/company-hli.jpg
 ---
 
 <!-- Carousel Start -->
@@ -26,6 +51,29 @@ active: home
     </div>
 </div>
 <!-- Carousel End -->
+
+<!-- Client List Start -->
+<div class="container-xxl">
+    <div class="container py-5">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="text-secondary text-uppercase">Our Clients</h6>
+            <h1>Trusted By Many, driving businesses forward</h1>
+            <p class="mb-5">Our services helps these brands build their businesses and keep it growing.</p>
+        </div>
+        <div class="row g-4">
+            <div class="carousel-container">
+                <div class="carousel" id="client-carousel">
+                    {% for client in clients %}
+                    <div class="carousel-slide d-flex align-items-center" style="height: 30vh;">
+                        <img class="img-fluid" src="{{client.logo}}" alt="Client 1 Logo">
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Client List End -->
 
 
 <!-- About Start -->
@@ -59,6 +107,50 @@ active: home
     </div>
 </div>
 <!-- About End -->
+
+<!-- How It Works Start -->
+<div class="container-xxl">
+    <div class="container py-5">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="text-secondary text-uppercase">How It Works</h6>
+            <h1>Explore How Our Services Work</h1>
+            <p class="mb-5">Get your rental delivered within three easy steps.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item p-4">
+                    <div class="overflow-hidden mb-4" style="height: 30vh;">
+                        <img class="img-fluid" src="/assets/img/service-1.jpg" alt="">
+                    </div>
+                    <h4 class="mb-3">Select Your Ride</h4>
+                    <p>Browse our fleet and choose the perfect car using our app. Customize with options like a driver and pickup location.</p>
+                    <a class="btn-slide mt-2" href="how-it-works/car-selection"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item p-4">
+                    <div class="overflow-hidden mb-4" style="height: 30vh;">
+                        <img class="img-fluid" src="/assets/img/service-2.jpg" alt=""> 
+                    </div>
+                    <h4 class="mb-3">Car Inspection</h4>
+                    <p>Our staff will inspect the car of your choice to ensure it is in top condition, and meets high safety and cleanliness standards.</p>
+                    <a class="btn-slide mt-2" href="how-it-works/car-inspection"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="service-item p-4">
+                    <div class="overflow-hidden mb-4" style="height: 30vh;">
+                        <img class="img-fluid" src="/assets/img/service-3.jpg" alt="">
+                    </div>
+                    <h4 class="mb-3">Delivery</h4>
+                    <p>Enjoy delivery to your preferred location, whether it’s your home, office, or another spot. No rentals has never been this easy.</p>
+                    <a class="btn-slide mt-2" href="how-it-works/car-delivery"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- How It Works End -->
 
 <!-- Service Start -->
 <div class="container-xxl py-5">
@@ -149,3 +241,27 @@ active: home
     </div>
 </div>
 <!-- Testimonial End -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const carousel = document.getElementById('client-carousel');
+        const slides = Array.from(carousel.children);
+        const totalWidth = slides.reduce((acc, slide) => acc + slide.offsetWidth + 20, 0); // 20 for margin
+
+        // Duplicate slides to create the infinite effect
+        slides.forEach(slide => {
+            const clone = slide.cloneNode(true);
+            carousel.appendChild(clone);
+        });
+
+        // Adjust the width of the carousel to accommodate all slides
+        const totalSlides = carousel.children.length;
+        carousel.style.width = `${totalWidth * 2}px`; // Adjust based on total slide width
+
+        // Adjust the keyframes animation duration based on the total width
+        const keyframesDuration = totalWidth / 10; // Adjust speed here if needed
+        document.styleSheets[0].insertRule(`@keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-${totalWidth}px); } }`, 0);
+        carousel.style.animationDuration = `${keyframesDuration}s`;
+    });
+
+</script>
