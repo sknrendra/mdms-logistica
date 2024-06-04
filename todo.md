@@ -40,10 +40,17 @@
 6. subscription: 
 
 # Company Profile
-1. Client List (index)
-2. Car List & Request new car
-3. About Us, Company Profile, President & CEO: Hur Woo Seok
+2. Car List & Request new car (new page)
+3. About Us, Company Profile, President & CEO: Hur Woo Seok (update about us)
 5. Service Include
     - perbaikan dan perawatan berkala per 10000km, penggantian ban dan accu
     - perpanjangan STNK
     - Asuransi all risk
+    - Request new car (new page)
+    - odd-even plate
+
+6. index
+- value proposition
+ > perbaikan dan perawatan berkala per 10000km, penggantian ban dan accu
+ > large types of car selection
+ > Asuransi all risk
