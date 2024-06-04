@@ -1,14 +1,10 @@
 ---
-eleventyComputed:
-    header:
-        name: "{{'car-inspection' | i18n}}"
-        breadcrumb:
-            -   name: "{{'home' | i18n}}"
-                url: "/"
-            -   name: "{{'how-it-works' | i18n}}"
-                url: "/how-it-works"
-            -   name: "{{'car-inspection' | i18n}}"
-                url: "/how-it-works/car-inspection"
+header:
+    name: Car Selection
+    breadcrumb:
+        - {"name": "Home", "url": "/"}
+        - {"name": "How It Works", "url": "/how-it-works"}
+        - {"name": "Car Selection", "url": "/how-it-works/car-selection"}
 ---
 
 {% include "header.html" %}
@@ -19,24 +15,24 @@ eleventyComputed:
         <div class="row g-5 mx-lg-0">
             <div class="col-lg-6 ps-lg-0 wow fadeInLeft" data-wow-delay="0.1s">
                 <div class="overflow-hidden" style="height: 59vh;">
-                    <img class=" img-fluid w-100 h-100" src="/assets/img/service-2.jpg" style="object-fit: cover;" alt="">
+                    <img class=" img-fluid w-100 h-100" src="/assets/img/service-1.jpg" style="object-fit: cover;" alt="">
                 </div>
             </div>
             <div class="col-lg-6 about-text wow fadeInUp d-flex align-items-center" data-wow-delay="0.3s">
                 <div>
                     <h6 class="text-secondary text-uppercase mb-3">How It Works</h6>
-                    <h1 class="mb-3">Thorough Inspection Process</h1>
-                    <p class="mb-5">Our staff carries out detailed inspection process, including checking the engine, brakes, tires, lights, and fluid levels to ensure the car is in perfect working condition.</p>
+                    <h1 class="mb-3">Browse Our Fleet</h1>
+                    <p class="mb-5">Explore a wide range of vehicles in our fleet, from sedans and SUVs to luxury cars and eco-friendly options. Use our app's search and filter features to easily find the perfect car that suits your needs and preferences.</p>
                     <div class="row g-4">
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                             <i class="fa fa-globe fa-3x text-primary mb-3"></i>
-                            <h5>Thorough Checking</h5>
-                            <p class="m-0">We inspect the car prior to delivery thoroughly. This include the checking of engine, brakes, tires, lights, and fluid levels to ensure the car is in perfect working condition.</p>
+                            <h5>Large Selections</h5>
+                            <p class="m-0">Browse our large variety of car selections, including sedans, SUVs, luxury cars, and eco-friendly options.</p>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
                             <i class="fa fa-shipping-fast fa-3x text-primary mb-3"></i>
-                            <h5>Advanced Testing</h5>
-                            <p class="m-0">We use advanced diagnostic tools or technology during inspections.</p>
+                            <h5>Search</h5>
+                            <p class="m-0">Search and filter cars based on options like vehicle type, brand, size, and fuel efficiency.</p>
                         </div>
                     </div>
                 </div>
@@ -53,23 +49,23 @@ eleventyComputed:
             <div class="col-lg-6 about-text wow fadeInUp d-flex align-items-center" data-wow-delay="0.3s">
                 <div>
                     <h6 class="text-secondary text-uppercase mb-3">How It Works</h6>
-                    <h1 class="mb-3">High Safety Standards</h1>
-                    <p class="mb-5">By maintaining regular maintenance scedules and compliance checking with local regulations, We ensure the cars we provide adheres to safety standards.</p>
+                    <h1 class="mb-3">Full Car Details</h1>
+                    <p class="mb-5">Get comprehensive information on each vehicle, including specifications, features, and high-quality images. Learn about the car's fuel efficiency, seating capacity, and unique attributes to make an informed decision.</p>
                     <div class="row g-4">
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                             <i class="fa fa-globe fa-3x text-primary mb-3"></i>
-                            <h5>Regular Maintenance</h5>
-                            <p class="m-0">We run maintenance according to the manufacturer's maintenance schedule guide and prior to car delivery. This ensures safety and reliability upon delivery.</p>
+                            <h5>Detailed Information</h5>
+                            <p class="m-0">Specifications, features and any special attributes (like hybrid, all-wheel drive) are listed.</p>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
                             <i class="fa fa-shipping-fast fa-3x text-primary mb-3"></i>
-                            <h5>Safety Ratings</h5>
-                            <p class="m-0">We only use cars exceeding certain safety ratings.</p>
+                            <h5>Perks Included</h5>
+                            <p class="m-0">Watch for any special perks or extras like free mileage limits, included insurance, or roadside assistance.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 ps-lg-0 wow fadeInLeft" data-wow-delay="0.1s">
+            <div class="col-lg-6 ps-lg-0 wow fadeInLeft" data-wow-delay="0.1s" style="padding-right: 0;">
                 <div class="overflow-hidden" style="height: 59vh;">
                     <img class=" img-fluid w-100 h-100" src="/assets/img/car-info.jpg" style="object-fit: cover;" alt="">
                 </div>
@@ -79,7 +75,7 @@ eleventyComputed:
 </div>
 <!-- Comprehensive Car Information End -->
 
-<!-- Thorough Hygiene Protocols Start -->
+<!-- Personalize Your Ride Start -->
 <div class="container-fluid overflow-hidden py-5 px-lg-0">
     <div class="container about py-5 px-lg-0">
         <div class="row g-5 mx-lg-0">
@@ -91,18 +87,18 @@ eleventyComputed:
             <div class="col-lg-6 about-text wow fadeInUp d-flex align-items-center" data-wow-delay="0.3s">
                 <div>
                     <h6 class="text-secondary text-uppercase mb-3">How It Works</h6>
-                    <h1 class="mb-3">Thorough Hygiene Protocols</h1>
-                    <p class="mb-5">We perform cleaning and sanitization process of each car before delivery.</p>
+                    <h1 class="mb-3">Personalize Your Ride</h1>
+                    <p class="mb-5">Personalize your rental with options such as adding a driver, selecting pickup and drop-off locations, or including extras like child seats and GPS units. Tailor your rental to fit your specific needs.</p>
                     <div class="row g-4">
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                             <i class="fa fa-globe fa-3x text-primary mb-3"></i>
-                            <h5>Detailed Cleaning</h5>
-                            <p class="m-0">Our team performs interior and exterior cleaning, as well as disinfecting high-touch areas.</p>
+                            <h5>Detailed Information</h5>
+                            <p class="m-0">Specifications, features and any special attributes (like hybrid, all-wheel drive) are listed.</p>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
                             <i class="fa fa-shipping-fast fa-3x text-primary mb-3"></i>
                             <h5>Perks Included</h5>
-                            <p class="m-0">Detail the available customization options such as adding a driver, choosing pickup and drop-off locations, selecting child seats, GPS units, or additional insurance coverage.</p>
+                            <p class="m-0">Detail customization options like adding a driver, pickup/drop-off locations, child seats, GPS units, and extra insurance.</p>
                         </div>
                     </div>
                 </div>

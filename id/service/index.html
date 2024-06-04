@@ -1,12 +1,9 @@
 ---
-eleventyComputed:
-    header:
-        name: "{{'services' | i18n}}"
-        breadcrumb:
-            -   name: "{{'home' | i18n}}"
-                url: "/"
-            -   name: "{{'services' | i18n}}"
-                url: "/service"
+header:
+    name: Individual Rentals
+    breadcrumb:
+        - {"name": "Home", "url": "/"}
+        - {"name": "Service", "url": "/service"}
 ---
 
 {% include "header.html" %}
@@ -26,7 +23,7 @@ eleventyComputed:
                     </div>
                     <h4 class="mb-3">Personal Car Rental</h4>
                     <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                    <a class="btn-slide mt-2" href="{{ '/service/individual' | locale_url }}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    <a class="btn-slide mt-2" href="/service/individual"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
@@ -36,7 +33,7 @@ eleventyComputed:
                     </div>
                     <h4 class="mb-3">Corporate Rental</h4>
                     <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                    <a class="btn-slide mt-2" href="{{ '/service/corporate' | locale_url }}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    <a class="btn-slide mt-2" href="/service/corporate"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                 </div>
             </div>
         </div>

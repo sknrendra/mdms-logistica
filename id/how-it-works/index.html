@@ -1,12 +1,9 @@
 ---
-eleventyComputed:
-    header:
-        name: "{{'how-it-works' | i18n}}"
-        breadcrumb:
-            -   name: "{{'home' | i18n}}"
-                url: "/"
-            -   name: "{{'how-it-works' | i18n}}"
-                url: "/how-it-works"
+header:
+    name: How It Works
+    breadcrumb:
+        - {"name": "Home", "url": "/"}
+        - {"name": "How It Works", "url": "/how-it-works"}
 ---
 
 {% include "header.html" %}
@@ -27,7 +24,7 @@ eleventyComputed:
                     </div>
                     <h4 class="mb-3">Select Your Ride</h4>
                     <p>Browse our fleet and choose the perfect car using our app. Customize with options like a driver and pickup location.</p>
-                    <a class="btn-slide mt-2" href="{{ 'car-selection' | locale_url }}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    <a class="btn-slide mt-2" href="car-selection"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
@@ -37,7 +34,7 @@ eleventyComputed:
                     </div>
                     <h4 class="mb-3">Car Inspection</h4>
                     <p>Our staff will inspect the car of your choice to ensure it is in top condition, and meets high safety and cleanliness standards.</p>
-                    <a class="btn-slide mt-2" href="{{ 'car-inspection' | locale_url }}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    <a class="btn-slide mt-2" href="car-inspection"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
@@ -47,7 +44,7 @@ eleventyComputed:
                     </div>
                     <h4 class="mb-3">Delivery</h4>
                     <p>Enjoy delivery to your preferred location, whether it’s your home, office, or another spot. No rentals has never been this easy.</p>
-                    <a class="btn-slide mt-2" href="{{ 'car-delivery' | locale_url }}"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    <a class="btn-slide mt-2" href="car-delivery"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                 </div>
             </div>
         </div>

@@ -6,18 +6,18 @@
     <title>Redirecting...</title>
     <script type="text/javascript">
 
-        function isKoreanLocale() {
+        function isIndonesianLocale() {
             const userLanguage = navigator.language || navigator.userLanguage;
-            const koreanLocales = ['ko', 'ko-KR'];
-            return koreanLocales.includes(userLanguage);
+            const indonesianLocales = ['id', 'id-ID'];
+            return indonesianLocales.includes(userLanguage);
         }
 
-        setTimeout(() => {window.location.href = isKoreanLocale() ? "/ko" : "/en"}, 0);
+        setTimeout(() => {window.location.href = isIndonesianLocale() ? "/ko" : "/en"}, 0);
         
     </script>
 </head>
 <body>
     <h1>Redirecting...</h1>
-    <p>If you are not redirected automatically, follow the link to Mulia Jasa Indokor's <a href="/en">english</a> page or <a href="/ko">korean</a> page.</p>
+    <p>If you are not redirected automatically, follow the link to Mulia Jasa Indokor's <a href="/en">english</a> page or <a href="/id">indonesian</a> page.</p>
 </body>
 </html>

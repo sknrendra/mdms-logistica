@@ -13,84 +13,84 @@ module.exports = function(eleventyConfig) {
         return `/${ page.lang || "en" }${url}`
     });
 
-    eleventyConfig.addFilter("toKorean", function(url, page) {
-        return `${url.replace('/en/', '/ko/')}`
+    eleventyConfig.addFilter("toIndonesian", function(url, page) {
+        return `${url.replace('/en/', '/id/')}`
     });
 
     eleventyConfig.addFilter("toEnglish", function(url, page) {
-        return `${url.replace('/ko/', '/en/')}`
+        return `${url.replace('/id/', '/en/')}`
     });
 
     eleventyConfig.addPlugin(i18n, {
         translations: {
           title: {
             'en': 'Mulia Jasa Indokor - Car Rental Company',
-            'ko': '물리아 야사 인도코르(Mulia Jasa Indokor) - 자동차 렌트 회사'
+            'id': 'Mulia Jasa Indokor - Rental Mobil Terpercaya'
           },
           'home': {
             'en': 'Home',
-            'ko': '홈 페이지'
+            'id': 'Beranda'
           },
           'how-it-works': {
             'en': 'How It Works',
-            'ko': '이용 방법'
+            'id': 'Cara Kerja'
           },
           'car-selection': {
             'en': 'Car Selection',
-            'ko': '차량 선택'
+            'id': 'Pilih Kendaraan'
           },
           'car-inspection': {
             'en': 'Car Inspection',
-            'ko': '차량 점검'
+            'id': 'Inspeksi Kendaraan'
           },
           'car-delivery': {
             'en': 'Car Delivery',
-            'ko': '차량 인도'
+            'id': 'Serah Terima'
           },
           'services': {
             'en': 'Services',
-            'ko': '서비스'
+            'id': 'Layanan'
           },
           'individual-rental': {
             'en': 'Individual Rental',
-            'ko': '기업 렌탈'
+            'id': 'Sewa Individu'
           },
           'corporate-rental': {
             'en': 'Corporate Rental',
-            'ko': '개인 렌탈'
+            'id': 'Sewa Korporasi'
           },
           'about-us': {
             'en': 'About Us',
-            'ko': '회사 소개'
+            'id': 'Tentang Kami'
           },
           'corporate-history': {
             'en': 'Corporate History',
-            'ko': '기업 역사'
+            'id': 'Sejarah Perusahaan'
           },
           'contact-us': {
             'en': 'Contact Us',
-            'ko': '연락처'
+            'id': 'Hubungi Kami'
           },
           'cta tag': {
             'en': 'Download App',
-            'ko': '앱 다운로드'
+            'id': 'Unduh Aplikasi'
           },
           'cta title': {
             'en': 'Try Our App Now',
-            'ko': '지금 당장 앱을 사용해 보세요'
+            'id': 'Coba Aplikasi Kami Sekarang'
           },
           'cta subheading': {
             'en': 'Choose Mulia Jasa Indokor for a reliable and convenient car rental experience. Try our app in Google Play Store now.',
-            'ko': '신뢰할 수 있고 편리한 차량 렌탈 경험을 위해 Mulia Jasa Indokor를 선택하세요. 지금 Google Play 스토어에서 우리 앱을 사용해 보세요.'
+            'id': 'Pilih Mulia Jasa Indokor untuk jasa sewa mobil yang nyaman dan terpercaya. Coba melalui aplikasi kami di Google Play Store sekarang.'
           },
           'address': {
             'en': 'Address',
-            'ko': '주소'
+            'id': 'Alamat'
           }
           
         },
         fallbackLocales: {
-          'ko': 'en'
+          'id': 'en'
         }
       });
 };
