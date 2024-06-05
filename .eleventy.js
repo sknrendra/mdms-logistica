@@ -86,6 +86,10 @@ module.exports = function(eleventyConfig) {
           'address': {
             'en': 'Address',
             'id': 'Alamat'
+          },
+          'about': {
+            'en': 'About',
+            'id': 'Tentang kami'
           }
           
         },

@@ -1,10 +1,14 @@
 ---
-header:
-    name: Contact Us
-    breadcrumb:
-        - {"name": "Home", "url": "/"}
-        - {"name": "About Us", "url": "/about"}
-        - {"name": "Contact Us", "url": "/about/contact"}
+eleventyComputed:
+    header:
+        name: "{{'contact-us' | i18n}}"
+        breadcrumb:
+            - name: "{{'home' | i18n}}"
+              url: /
+            - name: "{{'about-us' | i18n}}"
+              url: /about
+            - name: "{{'contact-us' | i18n}}"
+              url: /about/history
 ---
 
 {% include "header.html" %}
@@ -13,9 +17,9 @@ header:
 <div class="container-xxl py-5">
     <div class="container">
         <div class="d-flex align-items-center flex-column">
-            <h6 class="text-secondary text-uppercase">Get In Touch</h6>
-            <h1 class="mb-2">Contact Us For Any Query</h1>
-            <p class="mb-5">Contact us for information regarding car details, retail workflow, or other queries.</p>
+            <h6 class="text-secondary text-uppercase">Tentang Kami</h6>
+            <h1 class="mb-2">Hubungi Kami</h1>
+            <p class="mb-5">Punya pertanyaan? Ajukan pertanyaan anda kepada kami melalui kanal-kanal di bawah ini.</p>
         </div>
         <div class="row g-4">
             <div class="col-lg-6">
@@ -25,7 +29,7 @@ header:
                             <i class="fa fa-map-marker-alt text-primary"></i>
                         </div>
                         <div class="ms-4">
-                            <p class="mb-2">Address</p>
+                            <p class="mb-2">{{'address' | i18n}}</p>
                             <h5 class="mb-0">{{address}}</h5>
                         </div>
                     </div>
@@ -36,7 +40,7 @@ header:
                             <i class="fa fa-phone-alt text-primary"></i>
                         </div>
                         <div class="ms-4">
-                            <p class="mb-2">Call Us Now</p>
+                            <p class="mb-2">Telepon</p>
                             <h5 class="mb-0">{{phone}}</h5>
                         </div>
                     </div>
@@ -47,7 +51,7 @@ header:
                             <i class="fa fa-envelope-open text-primary"></i>
                         </div>
                         <div class="ms-4">
-                            <p class="mb-2">Mail Us Now</p>
+                            <p class="mb-2">Email</p>
                             <h5 class="mb-0">info@example.com</h5>
                         </div>
                     </div>
