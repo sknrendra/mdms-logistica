@@ -1,10 +1,14 @@
 ---
-header:
-    name: Car Selection
-    breadcrumb:
-        - {"name": "Home", "url": "/"}
-        - {"name": "How It Works", "url": "/how-it-works"}
-        - {"name": "Car Selection", "url": "/how-it-works/car-selection"}
+eleventyComputed:
+    header:
+        name: "{{'car-selection' | i18n}}"
+        breadcrumb:
+            - name: "{{'home' | i18n}}"
+              url: /
+            - name: "{{'how-it-works' | i18n}}"
+              url: /how-it-works
+            - name: "{{'car-selection' | i18n}}"
+              url: /how-it-works
 ---
 
 {% include "header.html" %}
@@ -20,19 +24,19 @@ header:
             </div>
             <div class="col-lg-6 about-text wow fadeInUp d-flex align-items-center" data-wow-delay="0.3s">
                 <div>
-                    <h6 class="text-secondary text-uppercase mb-3">How It Works</h6>
-                    <h1 class="mb-3">Browse Our Fleet</h1>
-                    <p class="mb-5">Explore a wide range of vehicles in our fleet, from sedans and SUVs to luxury cars and eco-friendly options. Use our app's search and filter features to easily find the perfect car that suits your needs and preferences.</p>
+                    <h6 class="text-secondary text-uppercase mb-3">{{'how-it-works' | i18n}}</h6>
+                    <h1 class="mb-3">Jelajahi Armada Kami</h1>
+                    <p class="mb-5">Jelajahi beragam kendaraan di armada kami, mulai dari sedan dan SUV hingga mobil mewah dan pilihan ramah lingkungan. Gunakan fitur pencarian dan filter aplikasi kami untuk dengan mudah menemukan mobil sempurna yang sesuai dengan kebutuhan dan preferensi Anda.</p>
                     <div class="row g-4">
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                             <i class="fa fa-globe fa-3x text-primary mb-3"></i>
-                            <h5>Large Selections</h5>
-                            <p class="m-0">Browse our large variety of car selections, including sedans, SUVs, luxury cars, and eco-friendly options.</p>
+                            <h5>Pilihan Lengkap</h5>
+                            <p class="m-0">Jelajahi beragam pilihan mobil kami, termasuk sedan, SUV, mobil mewah, dan pilihan ramah lingkungan.</p>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
                             <i class="fa fa-shipping-fast fa-3x text-primary mb-3"></i>
-                            <h5>Search</h5>
-                            <p class="m-0">Search and filter cars based on options like vehicle type, brand, size, and fuel efficiency.</p>
+                            <h5>Gunakan Fitur Pencarian</h5>
+                            <p class="m-0">Cari dan filter mobil berdasarkan opsi seperti jenis kendaraan, merek, atau ukuran.</p>
                         </div>
                     </div>
                 </div>
@@ -48,19 +52,19 @@ header:
         <div class="row g-5 mx-lg-0">
             <div class="col-lg-6 about-text wow fadeInUp d-flex align-items-center" data-wow-delay="0.3s">
                 <div>
-                    <h6 class="text-secondary text-uppercase mb-3">How It Works</h6>
-                    <h1 class="mb-3">Full Car Details</h1>
-                    <p class="mb-5">Get comprehensive information on each vehicle, including specifications, features, and high-quality images. Learn about the car's fuel efficiency, seating capacity, and unique attributes to make an informed decision.</p>
+                    <h6 class="text-secondary text-uppercase mb-3">{{'how-it-works' | i18n}}</h6>
+                    <h1 class="mb-3">Detail Mobil Lengkap</h1>
+                    <p class="mb-5">Dapatkan informasi lengkap setiap kendaraan, termasuk spesifikasi, fitur, dan gambar berkualitas tinggi. Pelajari tentang efisiensi bahan bakar mobil, kapasitas tempat duduk, dan atribut unik setiap mobil untuk membuat keputusan yang tepat.</p>
                     <div class="row g-4">
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                             <i class="fa fa-globe fa-3x text-primary mb-3"></i>
-                            <h5>Detailed Information</h5>
-                            <p class="m-0">Specifications, features and any special attributes (like hybrid, all-wheel drive) are listed.</p>
+                            <h5>Informasi Mendetail</h5>
+                            <p class="m-0">Spesifikasi, fitur, dan atribut khusus apa pun (seperti hibrida, penggerak semua roda) dicantumkan dalam aplikasi.</p>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
                             <i class="fa fa-shipping-fast fa-3x text-primary mb-3"></i>
-                            <h5>Perks Included</h5>
-                            <p class="m-0">Watch for any special perks or extras like free mileage limits, included insurance, or roadside assistance.</p>
+                            <h5>Fasilitas Khusus Tersedia</h5>
+                            <p class="m-0">Perhatikan fasilitas atau tambahan khusus seperti batas jarak tempuh gratis, termasuk asuransi, atau bantuan pinggir jalan.</p>
                         </div>
                     </div>
                 </div>
@@ -86,19 +90,19 @@ header:
             </div>
             <div class="col-lg-6 about-text wow fadeInUp d-flex align-items-center" data-wow-delay="0.3s">
                 <div>
-                    <h6 class="text-secondary text-uppercase mb-3">How It Works</h6>
-                    <h1 class="mb-3">Personalize Your Ride</h1>
-                    <p class="mb-5">Personalize your rental with options such as adding a driver, selecting pickup and drop-off locations, or including extras like child seats and GPS units. Tailor your rental to fit your specific needs.</p>
+                    <h6 class="text-secondary text-uppercase mb-3">{{'how-it-works' | i18n}}</h6>
+                    <h1 class="mb-3">Sesuaikan Dengan Yang Anda Mau.</h1>
+                    <p class="mb-5">Personalisasikan persewaan Anda dengan opsi seperti menambahkan pengemudi, memilih lokasi penjemputan dan pengantaran, atau menyertakan tambahan seperti kursi anak dan unit GPS. Sesuaikan persewaan Anda dengan kebutuhan spesifik Anda.</p>
                     <div class="row g-4">
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                             <i class="fa fa-globe fa-3x text-primary mb-3"></i>
-                            <h5>Detailed Information</h5>
-                            <p class="m-0">Specifications, features and any special attributes (like hybrid, all-wheel drive) are listed.</p>
+                            <h5>Beragam pilihan penyesuaian</h5>
+                            <p class="m-0">Beragam pilihan penyesuaian tercantum dalam aplikasi.</p>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
                             <i class="fa fa-shipping-fast fa-3x text-primary mb-3"></i>
-                            <h5>Perks Included</h5>
-                            <p class="m-0">Detail customization options like adding a driver, pickup/drop-off locations, child seats, GPS units, and extra insurance.</p>
+                            <h5>Fasilitas Khusus Tersedia</h5>
+                            <p class="m-0">Perhatikan fasilitas atau tambahan khusus seperti batas jarak tempuh gratis, termasuk asuransi, atau bantuan pinggir jalan.</p>
                         </div>
                     </div>
                 </div>

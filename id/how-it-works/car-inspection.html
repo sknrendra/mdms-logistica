@@ -1,10 +1,14 @@
 ---
-header:
-    name: Car Inspection
-    breadcrumb:
-        - {"name": "Home", "url": "/"}
-        - {"name": "How It Works", "url": "/how-it-works"}
-        - {"name": "Car Inspection", "url": "/how-it-works/car-inspection"}
+eleventyComputed:
+    header:
+        name: "{{'car-inspection' | i18n}}"
+        breadcrumb:
+            - name: "{{'home' | i18n}}"
+              url: /
+            - name: "{{'how-it-works' | i18n}}"
+              url: /how-it-works
+            - name: "{{'car-inspection' | i18n}}"
+              url: //how-it-works/car-inspection
 ---
 
 {% include "header.html" %}
@@ -20,19 +24,19 @@ header:
             </div>
             <div class="col-lg-6 about-text wow fadeInUp d-flex align-items-center" data-wow-delay="0.3s">
                 <div>
-                    <h6 class="text-secondary text-uppercase mb-3">How It Works</h6>
-                    <h1 class="mb-3">Thorough Inspection Process</h1>
-                    <p class="mb-5">Our staff carries out detailed inspection process, including checking the engine, brakes, tires, lights, and fluid levels to ensure the car is in perfect working condition.</p>
+                    <h6 class="text-secondary text-uppercase mb-3">{{'how-it-works' | i18n}}</h6>
+                    <h1 class="mb-3">Proses Pengecekan Menyeluruh</h1>
+                    <p class="mb-5">Staf kami melakukan proses pemeriksaan mendetail, termasuk memeriksa mesin, rem, ban, lampu, dan ketinggian cairan untuk memastikan mobil dalam kondisi kerja sempurna.</p>
                     <div class="row g-4">
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                             <i class="fa fa-globe fa-3x text-primary mb-3"></i>
-                            <h5>Thorough Checking</h5>
-                            <p class="m-0">We inspect the car prior to delivery thoroughly. This include the checking of engine, brakes, tires, lights, and fluid levels to ensure the car is in perfect working condition.</p>
+                            <h5>Pengecekan Menyeluruh</h5>
+                            <p class="m-0">Kami memeriksa mobil sebelum pengiriman secara menyeluruh. Hal ini meliputi pemeriksaan mesin, rem, ban, lampu, dan ketinggian cairan untuk memastikan mobil dalam kondisi kerja sempurna.</p>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
                             <i class="fa fa-shipping-fast fa-3x text-primary mb-3"></i>
-                            <h5>Advanced Testing</h5>
-                            <p class="m-0">We use advanced diagnostic tools or technology during inspections.</p>
+                            <h5>Pengujian Tingkat Lanjut</h5>
+                            <p class="m-0">Kami menggunakan alat atau teknologi diagnostik selama inspeksi.</p>
                         </div>
                     </div>
                 </div>
@@ -49,18 +53,18 @@ header:
             <div class="col-lg-6 about-text wow fadeInUp d-flex align-items-center" data-wow-delay="0.3s">
                 <div>
                     <h6 class="text-secondary text-uppercase mb-3">How It Works</h6>
-                    <h1 class="mb-3">High Safety Standards</h1>
-                    <p class="mb-5">By maintaining regular maintenance scedules and compliance checking with local regulations, We ensure the cars we provide adheres to safety standards.</p>
+                    <h1 class="mb-3">Standar Keselamatan Tinggi</h1>
+                    <p class="mb-5">Dengan menjaga jadwal perawatan rutin dan pemeriksaan kepatuhan terhadap peraturan lalu-lintas, Kami memastikan mobil yang kami sediakan mematuhi standar keselamatan.</p>
                     <div class="row g-4">
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                             <i class="fa fa-globe fa-3x text-primary mb-3"></i>
-                            <h5>Regular Maintenance</h5>
-                            <p class="m-0">We run maintenance according to the manufacturer's maintenance schedule guide and prior to car delivery. This ensures safety and reliability upon delivery.</p>
+                            <h5>Perawatan Rutin</h5>
+                            <p class="m-0">Kami menjalankan perawatan sesuai dengan panduan jadwal perawatan pabrikan dan sebelum pengiriman mobil. Hal ini memastikan keamanan dan keandalan pada saat pengiriman.</p>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
                             <i class="fa fa-shipping-fast fa-3x text-primary mb-3"></i>
                             <h5>Safety Ratings</h5>
-                            <p class="m-0">We only use cars exceeding certain safety ratings.</p>
+                            <p class="m-0">Kami hanya menggunakan mobil yang melebihi tingkat keselamatan tertentu.</p>
                         </div>
                     </div>
                 </div>
@@ -86,19 +90,14 @@ header:
             </div>
             <div class="col-lg-6 about-text wow fadeInUp d-flex align-items-center" data-wow-delay="0.3s">
                 <div>
-                    <h6 class="text-secondary text-uppercase mb-3">How It Works</h6>
-                    <h1 class="mb-3">Thorough Hygiene Protocols</h1>
-                    <p class="mb-5">We perform cleaning and sanitization process of each car before delivery.</p>
+                    <h6 class="text-secondary text-uppercase mb-3">{{'how-it-works'| i18n}}</h6>
+                    <h1 class="mb-3">Protokol Kebersihan Menyeluruh</h1>
+                    <p class="mb-5">Kami melakukan proses pembersihan dan sanitasi setiap mobil sebelum pengiriman.</p>
                     <div class="row g-4">
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                             <i class="fa fa-globe fa-3x text-primary mb-3"></i>
-                            <h5>Detailed Cleaning</h5>
-                            <p class="m-0">Our team performs interior and exterior cleaning, as well as disinfecting high-touch areas.</p>
-                        </div>
-                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
-                            <i class="fa fa-shipping-fast fa-3x text-primary mb-3"></i>
-                            <h5>Perks Included</h5>
-                            <p class="m-0">Detail the available customization options such as adding a driver, choosing pickup and drop-off locations, selecting child seats, GPS units, or additional insurance coverage.</p>
+                            <h5>Pembersihan Mendetail</h5>
+                            <p class="m-0">Tim kami melakukan pembersihan interior dan eksterior, serta mendisinfeksi area yang sering disentuh.</p>
                         </div>
                     </div>
                 </div>

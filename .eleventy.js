@@ -90,6 +90,10 @@ module.exports = function(eleventyConfig) {
           'about': {
             'en': 'About',
             'id': 'Tentang kami'
+          },
+          'read-more': {
+            'en': 'Read More',
+            'id': 'Baca Lebih Lanjut'
           }
           
         },

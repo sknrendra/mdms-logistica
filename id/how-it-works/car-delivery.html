@@ -1,10 +1,14 @@
 ---
-header:
-    name: Car Delivery
-    breadcrumb:
-        - {"name": "Home", "url": "/"}
-        - {"name": "How It Works", "url": "/how-it-works"}
-        - {"name": "Car Delivery", "url": "/how-it-works/car-delivery"}
+eleventyComputed:
+    header:
+        name: "{{'car-delivery' | i18n}}"
+        breadcrumb:
+            - name: "{{'home' | i18n}}"
+              url: /
+            - name: "{{'how-it-works' | i18n}}"
+              url: /how-it-works
+            - name: "{{'car-delivery' | i18n}}"
+              url: //how-it-works/car-delivery
 ---
 
 {% include "header.html" %}
@@ -20,19 +24,19 @@ header:
             </div>
             <div class="col-lg-6 about-text wow fadeInUp d-flex align-items-center" data-wow-delay="0.3s">
                 <div>
-                    <h6 class="text-secondary text-uppercase mb-3">How It Works</h6>
-                    <h1 class="mb-3">Flexible Delivery Options</h1>
-                    <p class="mb-5">Choose your preferred delivery location and time to fit your schedule, making car rentals incredibly convenient.</p>
+                    <h6 class="text-secondary text-uppercase mb-3">{{'how-it-works' | i18n}}</h6>
+                    <h1 class="mb-3">Pilihan Pengiriman Fleksibel</h1>
+                    <p class="mb-5">Pilih lokasi dan waktu pengiriman yang sesuai dengan jadwal Anda. Menyewa mobil di Mulia Jasa Indokor menjadi sangat nyaman.</p>
                     <div class="row g-4">
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                             <i class="fa fa-globe fa-3x text-primary mb-3"></i>
-                            <h5>Choose Your Location</h5>
-                            <p class="m-0">Select from a range of delivery locations through our app, including home, office, or any custom address.</p>
+                            <h5>Pilih Lokasi Anda</h5>
+                            <p class="m-0">Pilih dari berbagai lokasi pengiriman melalui aplikasi kami, termasuk rumah, kantor, atau alamat khusus apa pun.</p>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
                             <i class="fa fa-shipping-fast fa-3x text-primary mb-3"></i>
-                            <h5>Delivery Times</h5>
-                            <p class="m-0">We offer delivery times to fit your schedule, whether you need the car early in the morning or late in the evening.</p>
+                            <h5>Waktu Pengiriman Fleksibel</h5>
+                            <p class="m-0">Kami menawarkan waktu pengiriman agar sesuai dengan kebutuhan Anda, baik di pagi hari atau sore hari.</p>
                         </div>
                     </div>
                 </div>
@@ -48,19 +52,19 @@ header:
         <div class="row g-5 mx-lg-0">
             <div class="col-lg-6 about-text wow fadeInUp d-flex align-items-center" data-wow-delay="0.3s">
                 <div>
-                    <h6 class="text-secondary text-uppercase mb-3">How It Works</h6>
+                    <h6 class="text-secondary text-uppercase mb-3">{{'how-it-works' | i18n}}</h6>
                     <h1 class="mb-3">Personalized Handover</h1>
-                    <p class="mb-5">By maintaining regular maintenance schedules and compliance checking with local regulations, We ensure the cars we provide adheres to safety standards.</p>
+                    <p class="mb-5">Dengan menjaga jadwal perawatan rutin dan pemeriksaan kepatuhan terhadap peraturan setempat, Kami memastikan mobil yang kami sediakan mematuhi standar keselamatan.</p>
                     <div class="row g-4">
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                             <i class="fa fa-globe fa-3x text-primary mb-3"></i>
                             <h5>Personalized Handover</h5>
-                            <p class="m-0">A friendly staff member will meet you at the designated location to hand over the car, provide a brief overview of its features, and answer any questions you may have.</p>
+                            <p class="m-0">Staf kami akan menemui Anda di lokasi yang ditentukan untuk menyerahkan mobil, memberikan gambaran singkat tentang fitur-fiturnya, dan menjawab pertanyaan apa pun yang Anda miliki.</p>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
                             <i class="fa fa-shipping-fast fa-3x text-primary mb-3"></i>
-                            <h5>Easy Documentation</h5>
-                            <p class="m-0">We will complete any necessary paperwork quickly and efficiently on the spot to streamline the process.</p>
+                            <h5>Dokumen lengkap & mudah</h5>
+                            <p class="m-0">Kami akan menyelesaikan semua dokumen yang diperlukan dengan cepat dan efisien.</p>
                         </div>
                     </div>
                 </div>
@@ -86,14 +90,14 @@ header:
             </div>
             <div class="col-lg-6 about-text wow fadeInUp d-flex align-items-center" data-wow-delay="0.3s">
                 <div>
-                    <h6 class="text-secondary text-uppercase mb-3">How It Works</h6>
-                    <h1 class="mb-3">Convenient Returns</h1>
-                    <p class="mb-5">We offer flexible and convenient pickup, whether it’s a pick-up from your location or a drop-off at a designated spot.</p>
+                    <h6 class="text-secondary text-uppercase mb-3">{{'how-it-works'}}</h6>
+                    <h1 class="mb-3">Pengembalian Mudah</h1>
+                    <p class="mb-5">Kami menawarkan penjemputan yang fleksibel dan nyaman, baik penjemputan dari lokasi Anda atau pengantaran ke tempat yang ditentukan.</p>
                     <div class="row g-4">
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                             <i class="fa fa-globe fa-3x text-primary mb-3"></i>
-                            <h5>Choose Your Location and Schedule</h5>
-                            <p class="m-0">Not only when delivering, we also provide convenient and flexible options when returning the rental.</p>
+                            <h5>Pilih lokasi dan jadwal anda </h5>
+                            <p class="m-0">Tidak hanya saat pengantaran, kami juga memberikan pilihan yang nyaman dan fleksibel saat mengembalikan mobil.</p>
                         </div>
                     </div>
                 </div>
