@@ -1,10 +1,14 @@
 ---
-header:
-    name: Corporate Rentals
-    breadcrumb:
-        - {"name": "Home", "url": "/"}
-        - {"name": "Service", "url": "/service"}
-        - {"name": "Corporate Rental", "url": "/service/corporate"}
+eleventyComputed:
+    header:
+        name: "{{'corporate-rental' | i18n}}"
+        breadcrumb:
+            - name: "{{'home' | i18n}}"
+              url: /
+            - name: "{{'services' | i18n}}"
+              url: /service
+            - name: "{{'corporate-rental' | i18n}}"
+              url: /service/corporate
 ---
 
 {% include "header.html" %}
@@ -20,19 +24,19 @@ header:
             </div>
             <div class="col-lg-6 about-text wow fadeInUp d-flex align-items-center" data-wow-delay="0.3s">
                 <div>
-                    <h6 class="text-secondary text-uppercase mb-3">Services</h6>
-                    <h1 class="mb-3">Flexible, Fully Featured Corporate Car Solutions.</h1>
-                    <p class="mb-5">Designed to meet the specific needs of businesses, from small enterprises to large corporations. We have an array of features designed to help you succeed.</p>
+                    <h6 class="text-secondary text-uppercase mb-3">{{'services' | i18n}}</h6>
+                    <h1 class="mb-3">Solusi Mobil Korporat yang Fleksibel dan Berfitur Lengkap.</h1>
+                    <p class="mb-5">Dirancang untuk memenuhi kebutuhan spesifik bisnis, mulai dari usaha kecil hingga perusahaan besar. Kami memiliki serangkaian fitur yang dirancang untuk membantu Anda sukses.</p>
                     <div class="row g-4">
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                             <i class="fa fa-globe fa-3x text-primary mb-3"></i>
-                            <h5>Flexible Terms</h5>
-                            <p class="m-0">Short and long-term options available.</p>
+                            <h5>Masa Sewa Fleksibel</h5>
+                            <p class="m-0">Tersedia opsi sewa jangka pendek dan jangka panjang.</p>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
                             <i class="fa fa-shipping-fast fa-3x text-primary mb-3"></i>
-                            <h5>Support and Quality Services</h5>
-                            <p class="m-0">High quality services at your fingertips offering various car models available.</p>
+                            <h5>Dukungan dan Layanan yang Berkualitas</h5>
+                            <p class="m-0">Layanan berkualitas tinggi di ujung jari Anda menawarkan berbagai model mobil yang tersedia.</p>
                         </div>
                     </div>
                 </div>
@@ -48,19 +52,19 @@ header:
         <div class="row g-5 mx-lg-0">
             <div class="col-lg-6 about-text wow fadeInUp d-flex align-items-center" data-wow-delay="0.3s">
                 <div>
-                    <h6 class="text-secondary text-uppercase mb-3">How It Works</h6>
-                    <h1 class="mb-3">Request New Cars</h1>
-                    <p class="mb-5">For extended rentals, enjoy the peace of mind of a refreshed ride. Our app allows you to request a new car, ensuring your journey stays as reliable as the day you began.</p>
+                    <h6 class="text-secondary text-uppercase mb-3">{{'services' | i18n}}</h6>
+                    <h1 class="mb-3">Request Mobil Baru</h1>
+                    <p class="mb-5">Untuk sewa jangka panjang, nikmati ketenangan pikiran dalam perjalanan yang menyegarkan. Aplikasi kami memungkinkan Anda meminta mobil baru, memastikan perjalanan Anda tetap dapat diandalkan seperti hari Anda memulai.</p>
                     <div class="row g-4">
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                             <i class="fa fa-globe fa-3x text-primary mb-3"></i>
-                            <h5>Seamless Transition</h5>
-                            <p class="m-0">Schedule your new fleet delivery at your convenience with just a few taps in our app. Our team will handle the swap, ensuring you experience no interruptions to your business plans.</p>
+                            <h5>Transisi Terintegrasi.</h5>
+                            <p class="m-0">Jadwalkan pengiriman armada baru Anda sesuai keinginan Anda hanya dengan beberapa ketukan di aplikasi kami. Tim kami akan menangani pertukaran tersebut, memastikan Anda tidak mengalami gangguan pada rencana bisnis Anda.</p>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
                             <i class="fa fa-shipping-fast fa-3x text-primary mb-3"></i>
-                            <h5>Customized Options</h5>
-                            <p class="m-0">Choose from our updated fleet to match your company's evolving needs, whether you require a different vehicle type or additional features. We can provide recommendations based on your business requirement and preferences.</p>
+                            <h5>Ragam Pilihan Tersedia</h5>
+                            <p class="m-0">Pilih armada terbaru kami sesuai dengan kebutuhan perusahaan Anda yang terus berkembang, baik jika Anda memerlukan jenis kendaraan yang berbeda atau fitur tambahan. Kami juga dapat memberikan rekomendasi berdasarkan kebutuhan dan preferensi bisnis Anda.</p>
                         </div>
                     </div>
                 </div>
@@ -86,19 +90,19 @@ header:
             </div>
             <div class="col-lg-6 about-text wow fadeInUp d-flex align-items-center" data-wow-delay="0.3s">
                 <div>
-                    <h6 class="text-secondary text-uppercase mb-3">Services</h6>
-                    <h1 class="mb-3">Corporate Driver Management</h1>
-                    <p class="mb-5">Empower your business with seamless driver management. Our app offers corporate customers the flexibility to assign and manage their drivers effortlessly, ensuring smooth operations and maximum efficiency.</p>
+                    <h6 class="text-secondary text-uppercase mb-3">{{'services' | i18n}}</h6>
+                    <h1 class="mb-3">Manajemen Pengemudi Untuk Korporasi</h1>
+                    <p class="mb-5">Dukung bisnis Anda dengan manajemen pengemudi yang handal. Aplikasi kami menawarkan pelanggan korporat fleksibilitas untuk menugaskan dan mengelola pengemudi mereka sendiri dengan mudah, memastikan kelancaran operasional dan efisiensi maksimum.</p>
                     <div class="row g-4">
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                             <i class="fa fa-globe fa-3x text-primary mb-3"></i>
-                            <h5>Effortless Assignment</h5>
-                            <p class="m-0">Easily assign and reassign drivers to specific vehicles or routes through our user-friendly app. This feature helps you adapt quickly to changing business needs without any hassle.</p>
+                            <h5>Atur Pengemudi Dengan Mudah</h5>
+                            <p class="m-0">Atur pengemudi dengan mudah dengan kendaraan atau rute tertentu melalui aplikasi kami. Fitur ini membantu Anda beradaptasi dengan cepat terhadap perubahan kebutuhan bisnis tanpa kerumitan apa pun.</p>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                             <i class="fa fa-globe fa-3x text-primary mb-3"></i>
-                            <h5>Enhanced Coordination</h5>
-                            <p class="m-0">Manage all your corporate drivers in one place, allowing for better coordination and communication. This ensures that your fleet operates smoothly and efficiently, minimizing downtime and maximizing productivity.</p>
+                            <h5>Koordinasi Perusahaan yang Dinamis</h5>
+                            <p class="m-0">Kelola semua pengemudi perusahaan Anda di satu tempat, memungkinkan koordinasi dan komunikasi yang lebih baik. Hal ini memastikan armada Anda beroperasi dengan lancar dan efisien, meminimalkan waktu henti dan memaksimalkan produktivitas.</p>
                         </div>
                     </div>
                 </div>
@@ -114,13 +118,13 @@ header:
         <div class="row g-5 mx-lg-0">
             <div class="col-lg-6 about-text wow fadeInUp d-flex align-items-center" data-wow-delay="0.3s">
                 <div>
-                    <h6 class="text-secondary text-uppercase mb-3">Services</h6>
-                    <h1 class="mb-3">Fleet Flexibility for Corporations</h1>
-                    <p class="mb-5">Tailored for business needs, our app boasts an extensive fleet selection and size.</p>
+                    <h6 class="text-secondary text-uppercase mb-3">{{'services' | i18n}}</h6>
+                    <h1 class="mb-3">Fleksibilitas Armada untuk Perusahaan</h1>
+                    <p class="mb-5">Disesuaikan untuk kebutuhan bisnis, aplikasi kami menawarkan pilihan dan jumlah armada yang melimpah.</p>
                     <div class="wow fadeIn" data-wow-delay="0.5s">
                         <i class="fa fa-globe fa-3x text-primary mb-3"></i>
-                        <h5>Choose Your Cars and Fleet Size</h5>
-                        <p class="m-0">Corporations can effortlessly request a large number of cars, ensuring ample options to accommodate any scale of operation with ease.</p>
+                        <h5>Pilih Jumlah dan Tipe Armada Anda.</h5>
+                        <p class="m-0">Perusahaan dapat dengan mudah meminta mobil dalam jumlah besar, memastikan banyak pilihan untuk mengakomodasi skala operasi apa pun dengan mudah.</p>
                     </div>
                 </div>
             </div>

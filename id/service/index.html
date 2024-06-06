@@ -1,9 +1,12 @@
 ---
-header:
-    name: Individual Rentals
-    breadcrumb:
-        - {"name": "Home", "url": "/"}
-        - {"name": "Service", "url": "/service"}
+eleventyComputed:
+    header:
+        name: "{{'services' | i18n}}"
+        breadcrumb:
+            - name: "{{'home' | i18n}}"
+              url: /
+            - name: "{{'services' | i18n}}"
+              url: /service
 ---
 
 {% include "header.html" %}
@@ -12,8 +15,8 @@ header:
 <div class="container-xxl py-5">
     <div class="container py-5">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="text-secondary text-uppercase">Our Services</h6>
-            <h1 class="mb-5">Explore Our Services</h1>
+            <h6 class="text-secondary text-uppercase">{{'services' | i18n}}</h6>
+            <h1 class="mb-5">Jelajahi Beragam Layanan Kami</h1>
         </div>
         <div class="row g-4">
             <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
@@ -21,9 +24,9 @@ header:
                     <div class="overflow-hidden mb-4">
                         <img class="img-fluid" src="/assets/img/personal-rental.jpg" alt="">
                     </div>
-                    <h4 class="mb-3">Personal Car Rental</h4>
-                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                    <a class="btn-slide mt-2" href="/service/individual"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    <h4 class="mb-3">Sewa Mobil Perorangan</h4>
+                    <p>Sewa kendaraan dengan fitur-fitur lengkap, mulai dari request plat nomor ganjil/genap dan dilengkapi pilihan kendaraan yang beragam.</p>
+                    <a class="btn-slide mt-2" href="{{'/service/individual' | locale_url}}"><i class="fa fa-arrow-right"></i><span>{{'read-more' | i18n}}</span></a>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
@@ -31,9 +34,9 @@ header:
                     <div class="overflow-hidden mb-4">
                         <img class="img-fluid" src="/assets/img/corporate-rental.jpg" alt="">
                     </div>
-                    <h4 class="mb-3">Corporate Rental</h4>
-                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                    <a class="btn-slide mt-2" href="/service/corporate"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    <h4 class="mb-3">Sewa Mobil Perusahaan/Armada</h4>
+                    <p>Solusi armada kantor yang fleksibel. Semua mobil dilengkapi asuransi dan gratis servis kendaraan, aki dan busi.</p>
+                    <a class="btn-slide mt-2" href="{{'/service/corporate' | locale_url}}"><i class="fa fa-arrow-right"></i><span>{{'read-more' | i18n}}</span></a>
                 </div>
             </div>
         </div>
