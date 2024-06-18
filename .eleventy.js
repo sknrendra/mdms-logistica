@@ -94,6 +94,14 @@ module.exports = function(eleventyConfig) {
           'read-more': {
             'en': 'Read More',
             'id': 'Baca Lebih Lanjut'
+          },
+          'refund-policy': {
+            'en': 'Refund Policy',
+            'id': 'Kebijakan Pengembalian'
+          },
+          'tnc': {
+            'en': 'Terms and Conditions',
+            'id': 'Ketentuan dan Kebijakan Layanan'
           }
           
         },

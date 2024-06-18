@@ -29,8 +29,6 @@
 2. Perbaiki gambar yang double
 3. refactor components
 
-
-
 # IA
 1. saran: pasang wa floating button
 2. saran: seo untuk drive traffic biar websitenya keliatan
