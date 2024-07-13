@@ -39,6 +39,10 @@ module.exports = function(eleventyConfig) {
             'en': 'Car Selection',
             'id': 'Pilih Kendaraan'
           },
+          'car-list': {
+            'en': 'Car List',
+            'id': 'Pilihan Kendaraan'
+          },
           'car-inspection': {
             'en': 'Car Inspection',
             'id': 'Inspeksi Kendaraan'
