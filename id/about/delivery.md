@@ -1,6 +1,4 @@
 ---
-layout: layout_md.html
-
 eleventyComputed:
     header:
         name: "{{'delivery-policy' | i18n}}"
@@ -12,10 +10,9 @@ eleventyComputed:
             - name: "{{'delivery-policy' | i18n}}"
               url: /about/refund
 ---
+{% include "header.html" %}
 
 <h1 style='text-align: center; padding-bottom: 2vh;'>{{'delivery-policy' | i18n}}</h1>
-
-
 
 1. Informasi Umum
 Semua pesanan dibatasi oleh ketersediaan produk. Jika barang tidak ada stok saat Anda membuat pesanan, kami akan memberi tahu Anda dan mengembalikan total jumlah pesanan Anda menggunakan metode pembayaran asli.

@@ -1,5 +1,5 @@
 ---
-layout: layout_md.html
+layout: layout.html
 
 eleventyComputed:
     header:
@@ -12,6 +12,8 @@ eleventyComputed:
             - name: "{{'privacy-policy' | i18n}}"
               url: /about/privacy
 ---
+
+{% include "header.html" %}
 
 <h1 style='text-align: center; padding-bottom: 2vh;'>{{'privacy-policy' | i18n}}</h1>
 

@@ -1,6 +1,4 @@
 ---
-layout: layout_md.html
-
 eleventyComputed:
     header:
         name: "{{'tnc' | i18n}}"
@@ -12,6 +10,7 @@ eleventyComputed:
             - name: "{{'tnc' | i18n}}"
               url: /about/terms
 ---
+{% include "header.html" %} 
 
 <h1 style='text-align: center; padding-bottom: 2vh;'>Ketentuan dan Kebijakan Layanan</h1>
 

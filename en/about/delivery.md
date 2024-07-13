@@ -1,6 +1,4 @@
 ---
-layout: layout_md.html
-
 eleventyComputed:
     header:
         name: "{{'delivery-policy' | i18n}}"
@@ -12,6 +10,7 @@ eleventyComputed:
             - name: "{{'delivery-policy' | i18n}}"
               url: /about/refund
 ---
+{% include "header.html" %}
 
 <h1 style='text-align: center; padding-bottom: 2vh;'>{{'delivery-policy' | i18n}}</h1>
 

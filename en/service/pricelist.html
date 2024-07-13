@@ -1,4 +1,5 @@
 ---
+layout: layout.html
 cars:
     - name: Avanza
       manufacturer: Toyota
@@ -16,6 +17,26 @@ cars:
         bandung:
             include: 1100000
             exclude: 800000
+header:
+    name: Price List
+    breadcrumb:
+        - {"name": "Home", "url": "/"}
+        - {"name": "Services", "url": "/service"}
+        - {"name": "Price List", "url": "/service/pricelist"}
 ---
 
-<h1></h1>
+{% include "header.html" %}
+
+<!-- Price List Start -->
+<div class="container-xxl py-5">
+    <div class="container py-5">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="text-secondary text-uppercase">Our Price List</h6>
+            <h1 class="mb-5">Explore The Prices</h1>
+        </div>
+        <div>
+            <img src="/assets/img/pricelist13072024.jpeg" alt="">
+        </div>
+    </div>
+</div>
+<!-- Service End -->
