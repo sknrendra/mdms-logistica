@@ -30,32 +30,97 @@ cars:
     - name: Palisade
       manufacturer: Hyundai
       imagepath: palisade.jpg
-    
+    - name: Avanza
+      manufacturer: Toyota
+      imagepath: avanza.png
+    - name: Calya
+      manufacturer: Toyota
+      imagepath: calya.jpg
+    - name: Kijang Innova Reborn
+      manufacturer: Toyota
+      imagepath: innova-reborn.jpg
+    - name: Kijang Innova Zenix
+      manufacturer: Toyota
+      imagepath: innova-zenix.jpg
+    - name: Camry
+      manufacturer: Toyota
+      imagepath: camry.png
+    - name: Corolla
+      manufacturer: Toyota
+      imagepath: corolla.jpg
+    - name: Fortuner
+      manufacturer: Toyota
+      imagepath: fortuner.jpg
+    - name: Voxy
+      manufacturer: Toyota
+      imagepath: voxy.png
+    - name: Hiace
+      manufacturer: Toyota
+      imagepath: hiace.jpg
+    - name: Alphard
+      manufacturer: Toyota
+      imagepath: alphard.jpg
+    - name: WR-V
+      manufacturer: Honda
+      imagepath: wrv.png
+    - name: CR-V
+      manufacturer: Honda
+      imagepath: crv.jpg
+    - name: Accord
+      manufacturer: Honda
+      imagepath: accord.png
+    - name: Xpander
+      manufacturer: Mitsubishi
+      imagepath: expander.jpg
 ---
   
 {% include "header.html" %}
 
-<div class="container-fluid overflow-hidden py-5 px-lg-0">
-    <div class="container about py-5 px-lg-0">
+<!-- <div class="container-fluid overflow-hidden py-5 px-lg-0">
+    <div class="container about py-5 px-lg-0"> -->
         <div class="d-flex align-items-center flex-column">
             <h6 class="text-secondary text-uppercase">Car List</h6>
             <h1 class="mb-2">Explore Our Latest Cars</h1>
-            <p class="mb-5">Contact us for further information regarding car details.</p>
+            <p class="mb-5 text-center">Contact us for further information regarding car details.</p>
         </div>
         {% for manufacturer in manufacturers %}
-            <div style="text-align: center;">{{manufacturer.name}}</div>
-            <div style="display: flex; flex-wrap: wrap; padding: 0 20vw;">
+            <h3 style="text-align: center; margin-top: 2vh;">{{manufacturer.name}}</h3>
+            <div id="card-wrapper" class="px-lg-4" style="display: flex; flex-wrap: wrap; justify-content: center;">
                 {% for product in cars %}
                     {% if product.manufacturer == manufacturer.name %}
-                        <div style="margin: 2em;">
-                            <img src="/assets/img/cars/{{product.imagepath}}" alt="" style="width: 15vw;">
-                            <p>{{ product.name }}</p>
+                        <div class="car-card" class="wow fadeInUp" data-wow-delay="0.5s" style="margin: 0.3em;">
+                            <div class="service-item p-4">
+                                <div class="overflow-hidden mb-4 d-flex justify-content-center">
+                                    <img class="car-img" src="/assets/img/cars/{{product.imagepath}}" alt="" style="-webkit-transform: scaleX(-1); transform: scaleX(-1);">
+                                </div>
+                                <h4 class="mb-3 text-center">{{ product.name }}</h4>
+                            </div>
                         </div>
                     {% endif %}
                 {% endfor %}
             </div>
         {% endfor %}
-    </div>
-</div>
+    <!-- </div>
+</div> -->
+
+<style>
+    .car-card {
+      flex: 1 1 calc(100% - 1rem); /* 1 card per row on mobile */
+    }
+    .car-img {
+        width: 70vw; height: 35vh;
+    }
+
+    @media (min-width: 992px) {
+      .car-card {
+        flex: 1 1 calc(33.33333% - 1rem); /* 3 cards per row on large screens */
+        max-width: calc(33.33333% - 1rem);
+      }
+
+      .car-img {
+        width: 15vw; height: 23vh;
+      }
+    }
+</style>
   
 

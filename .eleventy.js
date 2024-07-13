@@ -24,8 +24,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(i18n, {
         translations: {
           title: {
-            'en': 'Mulia Jasa Indokor - Car Rental Company',
-            'id': 'Mulia Jasa Indokor - Rental Mobil Terpercaya'
+            'en': '1004Sewa - Car Rental Company',
+            'id': '1004Sewa - Rental Mobil Terpercaya'
           },
           'home': {
             'en': 'Home',
@@ -80,8 +80,8 @@ module.exports = function(eleventyConfig) {
             'id': 'Coba Aplikasi Kami Sekarang'
           },
           'cta subheading': {
-            'en': 'Choose Mulia Jasa Indokor for a reliable and convenient car rental experience. Try our app in Google Play Store now.',
-            'id': 'Pilih Mulia Jasa Indokor untuk jasa sewa mobil yang nyaman dan terpercaya. Coba melalui aplikasi kami di Google Play Store sekarang.'
+            'en': 'Choose 1004Sewa for a reliable and convenient car rental experience. Try our app in Google Play Store now.',
+            'id': 'Pilih 1004Sewa untuk jasa sewa mobil yang nyaman dan terpercaya. Coba melalui aplikasi kami di Google Play Store sekarang.'
           },
           'address': {
             'en': 'Address',
