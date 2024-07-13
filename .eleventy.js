@@ -32,8 +32,8 @@ module.exports = function(eleventyConfig) {
             'id': 'Beranda'
           },
           'how-it-works': {
-            'en': 'How It Works',
-            'id': 'Cara Kerja'
+            'en': 'Application (User Guide)',
+            'id': 'Panduan Pengguna'
           },
           'car-selection': {
             'en': 'Car Selection',
@@ -48,24 +48,24 @@ module.exports = function(eleventyConfig) {
             'id': 'Serah Terima'
           },
           'services': {
-            'en': 'Services',
-            'id': 'Layanan'
+            'en': 'Rental Car Services',
+            'id': 'Layanan Rental'
           },
           'individual-rental': {
-            'en': 'Individual Rental',
-            'id': 'Sewa Individu'
+            'en': 'Daily Rental',
+            'id': 'Sewa Harian'
           },
           'corporate-rental': {
-            'en': 'Corporate Rental',
-            'id': 'Sewa Korporasi'
+            'en': 'Monthly and Annual Rental',
+            'id': 'Sewa Bulanan dan Tahunan'
           },
           'about-us': {
             'en': 'About Us',
             'id': 'Tentang Kami'
           },
           'corporate-history': {
-            'en': 'Corporate History',
-            'id': 'Sejarah Perusahaan'
+            'en': '1004Sewa',
+            'id': '1004Sewa'
           },
           'contact-us': {
             'en': 'Contact Us',

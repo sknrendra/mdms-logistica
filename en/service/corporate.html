@@ -5,6 +5,31 @@ header:
         - {"name": "Home", "url": "/"}
         - {"name": "Service", "url": "/service"}
         - {"name": "Corporate Rental", "url": "/service/corporate"}
+clients:
+    - name: PT. IBK
+      logo: /assets/img/company-ibk.png
+    - name: PT. Hyundai AutoEver
+      logo: /assets/img/company-autoever.jpg
+    - name: PT. Glovis Indonesia Int
+      logo: /assets/img/company-glovis.jpg
+    - name: PT. Asiana Airlines
+      logo: /assets/img/company-asiana.png
+    - name: PT. Meritz Korindo
+      logo: /assets/img/company-meritz.png
+    - name: PT. Hanhwa Mining Indonesia
+      logo: /assets/img/company-hanhwa.png
+    - name: PT. Doosan Heavy Industries
+      logo: /assets/img/company-doosan.jpg
+    - name: PT. Krakatau Posco
+      logo: /assets/img/company-Krakatau-Posco.png
+    - name: PT. Hyundai Capital
+      logo: /assets/img/company-hyundai-capital.png
+    - name: PT. Hyundai Kefico
+      logo: /assets/img/company-kefico.png
+    - name: PT. CJ Logistics
+      logo: /assets/img/company-cj-logistic.png
+    - name: PT. HLI Green Power
+      logo: /assets/img/company-hli.jpg
 ---
 
 {% include "header.html" %}
@@ -12,6 +37,42 @@ header:
 <!-- Fully Featured Corporate Car Solutions Start -->
 <div class="container-fluid overflow-hidden py-5 px-lg-0">
     <div class="container about py-5 px-lg-0">
+
+        <!-- Client List Start -->
+        <div class="container-xxl mb-5">
+            <div class="container py-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="text-secondary text-uppercase">Our Clients</h6>
+                    <h1>Trusted By Many, driving businesses forward</h1>
+                    <p class="mb-5">Our services helps these brands build their businesses and keep it growing.</p>
+                </div>
+                <!-- <div class="row g-4">
+                    <div class="carousel-container">
+                        <div class="carousel" id="client-carousel">
+                            {% for client in clients %}
+                            <div class="carousel-slide d-flex align-items-center" style="height: 30vh;">
+                                <img class="img-fluid" src="{{client.logo}}" alt="Client 1 Logo">
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div> -->
+                <div id="card-wrapper" class="px-lg-4" style="display: flex; flex-wrap: wrap; justify-content: center;">
+                    {% for company in clients in cars %}
+                        <div class="car-card" class="wow fadeInUp" data-wow-delay="0.5s" style="margin: 0.3em;">
+                            <div class="service-item p-4">
+                                <div class="overflow-hidden mb-4 d-flex justify-content-center">
+                                    <img class="car-img" src="{{company.logo}}" alt="">
+                                </div>
+                                <h4 class="mb-3 text-center">{{ company.name }}</h4>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <!-- Client List End -->
+
         <div class="row g-5 mx-lg-0">
             <div class="col-lg-6 ps-lg-0 wow fadeInLeft" data-wow-delay="0.1s">
                 <div class="overflow-hidden" style="height: 59vh;">
