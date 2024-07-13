@@ -102,8 +102,15 @@ module.exports = function(eleventyConfig) {
           'tnc': {
             'en': 'Terms and Conditions',
             'id': 'Ketentuan dan Kebijakan Layanan'
+          },
+          'privacy-policy': {
+            'en': 'Privacy Policy',
+            'id': 'Kebijakan Privasi'
+          },
+          'delivery-policy': {
+            'en': "Delivery Policy",
+            'id': "Kebijakan Pengiriman"
           }
-          
         },
         fallbackLocales: {
           'id': 'en'
