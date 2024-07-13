@@ -24,3 +24,4 @@ eleventyComputed:
 8. Penyewa tidak berhak atau tidak diperbolehkan untuk mengubah struktur (bagian) dari kendaraan tanpa persetujuan tertulis dari Pemberi Sewa. 
 9.Pemberi Sewa harus memberitahukan kepada Penyewa apabila ada perubahan atas biaya sewa, dan hal-hal lainnya secepatnya, setiap perubahan yang terjadi harus disepakati dan tertulis oleh kedua belah pihak. 
 10. Jika pihak Penyewa mengakhiri Perjanjian ini lebih awal, maka Penyewa harus membayar 30% biaya sisa masa sewa sampai dengan berakhirnya Jangka Sewa.
+11. Syarat-syarat dan ketentuan lengkap dapat berbeda sesuai dengan kesepakatan masing-masing penyewa. Jika terdapat perbedaan antara syarat-syarat dan ketentuan yang tercantum pada website/aplikasi MJI dan kontrak sewa, maka yang berlaku adalah syarat-syarat dan ketentuan yang tercantum dalam kontrak yang ditanda tangani oleh kedua belah pihak.

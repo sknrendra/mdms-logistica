@@ -24,3 +24,4 @@ eleventyComputed:
 8. The Renter is not allowed to make any changes to the vehicle's structure (parts) without prior written consent from the Lessor.
 9. The Lessor shall inform the Renter of any changes in rental fees and other matters as soon as possible, and any changes must be agreed upon and in writing by both parties.
 10. If the Renter terminates this Agreement before the end of the rental period, the Renter shall pay 30% of the remaining rental fees for the rest of the rental period.
+11. The complete terms and conditions may vary based on the agreement of each tenant. In the event of any discrepancies between the terms and conditions stated on the MJI website/application and the rental contract, the terms and conditions in the signed contract shall take precedence.

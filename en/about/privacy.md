@@ -65,3 +65,5 @@ It is important for you to take the time to read and understand our Privacy Poli
 
 11. Contact Us
 If you have any questions about the processing of your personal information or any other questions related to this policy, please contact us through the contact information listed on our website/application.
+
+12. The complete terms and conditions may vary based on the agreement of each tenant. In the event of any discrepancies between the terms and conditions stated on the MJI website/application and the rental contract, the terms and conditions in the signed contract shall take precedence.

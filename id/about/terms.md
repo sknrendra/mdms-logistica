@@ -39,3 +39,4 @@ eleventyComputed:
 18. Jika kendaraan digunakan di luar wilayah Jabodetabek dan timbul biaya yang tidak dikenakan saat kendaraan berada di Jabodetabek, biaya tersebut menjadi tanggung jawab Penyewa.
 19. Penyewa bertanggung jawab atas biaya pelanggaran lalu lintas yang terjadi saat kendaraan dikemudikan oleh orang lain selain pengemudi yang ditunjuk, serta pelanggaran lalu lintas akibat instruksi langsung dari Penyewa.
 20. Penyewa dilarang melakukan kegiatan yang tidak diizinkan oleh Pemberi Sewa, termasuk namun tidak terbatas pada mengalihkan sewa kepada pihak lain, menggunakan kendaraan sebagai jaminan, dll.
+21. Syarat-syarat dan ketentuan lengkap dapat berbeda sesuai dengan kesepakatan masing-masing penyewa. Jika terdapat perbedaan antara syarat-syarat dan ketentuan yang tercantum pada website/aplikasi MJI dan kontrak sewa, maka yang berlaku adalah syarat-syarat dan ketentuan yang tercantum dalam kontrak yang ditanda tangani oleh kedua belah pihak.

@@ -39,3 +39,4 @@ eleventyComputed:
 18. If the vehicle is used outside the Jabodetabek area and additional costs arise that are not incurred when the vehicle is in Jabodetabek, the cost will be the responsibility of the Renter.
 19. The Renter is responsible for any traffic violations that occur when the vehicle is driven by someone other than the designated driver, as well as any traffic violations resulting from direct instructions from the Renter.
 20. The Renter is prohibited from engaging in activities not authorized by the Lender, including, but not limited to, transferring the lease to a third party, using the vehicle as collateral, etc.
+21. The complete terms and conditions may vary based on the agreement of each tenant. In the event of any discrepancies between the terms and conditions stated on the MJI website/application and the rental contract, the terms and conditions in the signed contract shall take precedence.

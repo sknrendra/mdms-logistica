@@ -35,3 +35,5 @@ Pajak penjualan dikenakan berdasarkan provinsi atau wilayah tujuan barang.
 
 6. Barang yang Rusak dalam Pengiriman
 Jika ada kerusakan pada paket saat diterima, silakan hubungi kami melalui informasi kontak yang tercantum di situs web/aplikasi kami.
+
+7. Syarat-syarat dan ketentuan lengkap dapat berbeda sesuai dengan kesepakatan masing-masing penyewa. Jika terdapat perbedaan antara syarat-syarat dan ketentuan yang tercantum pada website/aplikasi MJI dan kontrak sewa, maka yang berlaku adalah syarat-syarat dan ketentuan yang tercantum dalam kontrak yang ditanda tangani oleh kedua belah pihak.

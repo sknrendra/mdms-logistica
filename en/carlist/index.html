@@ -1,0 +1,61 @@
+---
+layout: layout.html
+header:
+      name: Car List
+      breadcrumb:
+          - {"name": "Home", "url": "/"}
+          - {"name": "Service", "url": "/service"}
+          - {"name": "Car List", "url": "/service/carlist"}
+manufacturers:
+    - name: Hyundai
+    - name: Toyota
+    - name: Honda
+    - name: Mitsubishi
+cars:
+    - name: Stargazer
+      manufacturer: Hyundai
+      imagepath: stargazer.jpg
+    - name: Creta
+      manufacturer: Hyundai
+      imagepath: creta.jpg
+    - name: Tucson
+      manufacturer: Hyundai
+      imagepath: tucson.png
+    - name: H1
+      manufacturer: Hyundai
+      imagepath: h1.png
+    - name: Santa Fe
+      manufacturer: Hyundai
+      imagepath: santafe.jpg
+    - name: Palisade
+      manufacturer: Hyundai
+      imagepath: palisade.jpg
+    
+---
+  
+{% include "header.html" %}
+
+<div class="container-fluid overflow-hidden py-5 px-lg-0">
+    <div class="container about py-5 px-lg-0">
+        <div class="d-flex align-items-center flex-column">
+            <h6 class="text-secondary text-uppercase">Car List</h6>
+            <h1 class="mb-2">Explore Our Latest Cars</h1>
+            <p class="mb-5">Contact us for further information regarding car details.</p>
+        </div>
+        {% for manufacturer in manufacturers %}
+            <div style="text-align: center;">{{manufacturer.name}}</div>
+            <div style="display: flex; flex-wrap: wrap; padding: 0 20vw;">
+                {% for product in cars %}
+                    {% if product.manufacturer == manufacturer.name %}
+                        <div style="margin: 2em;">
+                            <img src="/assets/img/cars/{{product.imagepath}}" alt="" style="width: 15vw;">
+                            <p>{{ product.name }}</p>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+</div>
+  
+

@@ -63,3 +63,5 @@ Penting bagi Anda untuk meluangkan waktu untuk membaca dan memahami kebijakan pr
 
 11. Kontak
 Apabila Anda ingin mengajukan pertanyaan mengenai pemrosesan data pribadi Anda atau pertanyaan lainnya sehubungan dengan kebijakan ini, silakan menghubungi Kami melalui kontak kami yang tertera pada website/aplikasi kami.
+
+12. Syarat-syarat dan ketentuan lengkap dapat berbeda sesuai dengan kesepakatan masing-masing penyewa. Jika terdapat perbedaan antara syarat-syarat dan ketentuan yang tercantum pada website/aplikasi MJI dan kontrak sewa, maka yang berlaku adalah syarat-syarat dan ketentuan yang tercantum dalam kontrak yang ditanda tangani oleh kedua belah pihak.

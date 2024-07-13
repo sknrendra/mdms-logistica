@@ -35,3 +35,5 @@ Sales tax is charged according to the province or territory to which the item is
 
 6. Damaged Items in Transport 
 If there is any damage to the packaging on delivery, please contact us through the contact information listed on our website/application.
+
+7. The complete terms and conditions may vary based on the agreement of each tenant. In the event of any discrepancies between the terms and conditions stated on the MJI website/application and the rental contract, the terms and conditions in the signed contract shall take precedence.
