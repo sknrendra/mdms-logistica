@@ -127,6 +127,28 @@
     margin-left: 8px;
 }
 
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu-menu {
+    position: absolute;
+    background: white;
+    padding: 1vh 0;
+    display: none;
+}
+
+.dropdown-submenu-menu.show {
+    display: block;
+}
+
+@media (min-width: 992px) {
+    .dropdown-submenu-menu {
+        right: 100%;
+        top: -1vh;
+    }
+}
+
 .navbar-light .navbar-nav .nav-link {
     position: relative;
     margin-right: 30px;

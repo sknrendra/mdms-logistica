@@ -34,39 +34,64 @@
     
     $(window).on("load resize", function() {
         if (this.matchMedia("(min-width: 992px)").matches) {
+            $dropdown.off()
+            $dropdownToggle.off()
             $dropdown.hover(
-            function() {
-                const $this = $(this);
-                $this.addClass(showClass);
-                $this.find($dropdownToggle).attr("aria-expanded", "true");
-                $this.find($dropdownMenu).addClass(showClass);
-            },
-            function() {
-                const $this = $(this);
-                $this.removeClass(showClass);
-                $this.find($dropdownToggle).attr("aria-expanded", "false");
-                $this.find($dropdownMenu).removeClass(showClass);
-            }
+                function() {
+                    const $this = $(this);
+                    $this.addClass(showClass);
+                    $this.find($dropdownToggle).attr("aria-expanded", "true");
+                    $this.find($dropdownMenu).addClass(showClass);
+                },
+                function() {
+                    const $this = $(this);
+                    $this.removeClass(showClass);
+                    $this.find($dropdownToggle).attr("aria-expanded", "false");
+                    $this.find($dropdownMenu).removeClass(showClass);
+                }
             );
+            // multi level dropdown
+            $('.dropdown-submenu').off()
+            $('.dropdown-submenu').on("mouseenter", (e) => {
+                console.log('hovered, toggling', $(this))
+                $('.dropdown-submenu-menu').addClass(showClass)
+            }).on("mouseleave", (e) => {
+                console.log('hovered out')
+                $('.dropdown-submenu-menu').removeClass(showClass)
+            })
         } else {
             $dropdown.off("mouseenter mouseleave");
+            $dropdownToggle.off()
             $dropdownToggle.on('click', function(event) {
-                
                 event.preventDefault()
 
-                let dropdown = $(this).parent()
                 let dropdownMenu = $(this).next()
 
-                if (dropdown.attr('class').includes('show')) {
-                    dropdown.removeClass(showClass)
+                if ($(this).attr('class').includes('show')) {
+                    $(this).removeClass(showClass)
                     dropdownMenu.removeClass(showClass)
+                    $('.dropdown-submenu-menu').removeClass(showClass)
                 } else {
-                    dropdown.addClass(showClass)
+                    $(this).addClass(showClass)
                     dropdownMenu.addClass(showClass)
+                }
+            })
+
+            // multilevel dropdown
+            $('.dropdown-submenu').off()
+            $('.dropdown-submenu').on("click", (e) => {
+                e.preventDefault()
+                console.log('click, toggling', $(this))
+                if ($('.dropdown-submenu-menu').attr('class').includes('show')) {
+                    $('.dropdown-submenu-menu').removeClass(showClass)
+                } else {
+                    $('.dropdown-submenu-menu').addClass(showClass)
                 }
             })
         }
     });
+
+    
     
     
     // Back to top button
