@@ -107,6 +107,10 @@ module.exports = function(eleventyConfig) {
             'en': 'Terms and Conditions',
             'id': 'Ketentuan dan Kebijakan Layanan'
           },
+          'payment-policy': {
+            'en': 'Payment Policy',
+            'id': 'Kebijakan Pembayaran'
+          },
           'privacy-policy': {
             'en': 'Privacy Policy',
             'id': 'Kebijakan Privasi'
