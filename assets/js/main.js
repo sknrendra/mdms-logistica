@@ -160,6 +160,16 @@
             }
         }
     });
+
+    /**
+     * handle 11ty bug, it sometimes adds empty <p> tags when using loops in front matter in .MD
+     */
+    function removeEmptyParagraphs() {
+        const breadcrumb = document.querySelector('ol.breadcrumb');
+        const emptyPTags = breadcrumb.querySelectorAll('p:empty');
+        emptyPTags.forEach(p => p.remove());
+    }
+    removeEmptyParagraphs()
     
 })(jQuery);
 
